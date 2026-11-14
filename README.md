@@ -10,6 +10,7 @@
 **CareerSync** is a full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application designed as a comprehensive academic/college project. It delivers an AI-powered career counseling and academic exploration system to help students make informed educational decisions, choose degree streams, discover colleges, and get real-time mentorship via Google Gemini AI.
 
 ---
+![Project Screenshot](images/ss1.png)
 
 ## 📌 Project Overview & Objectives
 
@@ -22,6 +23,7 @@ Many students struggle with stream selection after high school and lack accessib
 - **Secure Full-Stack Architecture**: Implement industry-standard authentication (JWT, Bcrypt, HTTP-only cookie support) and modular MVC backend design.
 
 ---
+![Project Screenshot](images/ss2.png)
 
 ## 🚀 Key Features
 
@@ -31,7 +33,7 @@ Many students struggle with stream selection after high school and lack accessib
 - **🤖 AI Career Advisor (Google Gemini)**: Real-time context-aware chatbot that ingests the user's academic profile and quiz results to provide tailored advice.
 - **🗓️ Dynamic Academic Timeline**: Visual tracker for upcoming entrance exam schedules, admission deadlines, and scholarship applications.
 - **🔒 Secure User Authentication**: Full user lifecycle management (Register, Login, Profile Update, Session Validation) secured with JWT and password encryption.
-
+![Project Screenshot](images/ss3.png)
 ---
 
 ## 🛠️ Tech Stack & Architecture
