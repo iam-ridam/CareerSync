@@ -72,6 +72,7 @@ Many students struggle with stream selection after high school and lack accessib
 - **Authentication**: JSON Web Tokens (Access + Refresh tokens) & Bcrypt.js
 - **AI Integration**: Google GenAI SDK (`@google/genai`) with Gemini 3.5 Flash
 - **Security & Utilities**: CORS, Cookie-Parser, Helmet, Custom Error Handlers
+![Project Screenshot](images/ss4.png)
 
 ---
 
