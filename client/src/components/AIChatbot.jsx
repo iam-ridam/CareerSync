@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Bot, Send, X, Minimize2, MessageCircle, Sparkles, AlertTriangle } from 'lucide-react';
 import { useUser } from '../context/UserContext';
+import { API_BASE_URL } from '../utils/api';
 
 const AIChatbot = () => {
   const { user, quizResults } = useUser();
@@ -66,7 +67,7 @@ const AIChatbot = () => {
     setError(null);
 
     try {
-      const response = await fetch('https://sih-backend.onrender.com/api/v1/chat', {
+      const response = await fetch(`${API_BASE_URL}/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

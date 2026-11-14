@@ -19,10 +19,14 @@ logs
 
 # Environment files (frontend & backend secrets)
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
+*.env
+*.env.*
+*.save
+*.save.*
+*.backup.*
+*.backup.json
+!.env.example
 
 # Coverage & testing
 coverage/

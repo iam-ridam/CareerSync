@@ -8,13 +8,16 @@ app.set("trust proxy", 1);
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173", 
-      "http://localhost:5174", 
-      "http://127.0.0.1:5173", 
-      "http://127.0.0.1:5174",
-      "https://sih-career-guidance-platform.vercel.app"
-    ],
+    origin: (origin, callback) => {
+      if (!origin) return callback(null, true);
+      if (
+        /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin) ||
+        origin === "https://sih-career-guidance-platform.vercel.app"
+      ) {
+        return callback(null, true);
+      }
+      return callback(null, false);
+    },
     credentials: true,
   })
 );

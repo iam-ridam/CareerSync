@@ -73,8 +73,9 @@ const chatWithGemini = asyncHandler(async (req, res) => {
     }));
 
   // Create chat session and send message
+  const model = process.env.GEMINI_MODEL || "gemini-3.5-flash";
   const chat = ai.chats.create({
-    model: "gemini-2.5-flash",
+    model,
     history: geminiHistory,
     config: {
       systemInstruction: SYSTEM_PROMPT + contextPreamble,
